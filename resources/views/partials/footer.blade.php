@@ -1,22 +1,29 @@
-<footer class="bg-gray-800 text-gray-300 py-10 px-4">
-    <div class="max-w-5xl mx-auto grid sm:grid-cols-3 gap-8">
+<footer class="bg-gray-900 text-gray-400 py-12 px-4">
+    <div class="max-w-5xl mx-auto">
 
-        <div>
-            <h3 class="font-semibold text-white mb-3">Контакти</h3>
-            <p class="text-sm">Telegram: @studoc_help</p>
-            <p class="text-sm mt-1">Час роботи: 10:00–20:00 (Київ)</p>
+        <div class="grid sm:grid-cols-3 gap-8 mb-8">
+            <div>
+                <span class="text-white font-bold text-xl">Stu<span class="text-amber-400">Doc</span></span>
+                <p class="text-sm mt-3 leading-relaxed">Оформлення студентських робіт за ДСТУ 8302:2015 і вимогами кафедр.</p>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-white mb-4">Контакти</h3>
+                <p class="text-sm">Telegram: @studoc_help</p>
+                <p class="text-sm mt-1">Час роботи: 10:00–20:00 (Київ)</p>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-white mb-4">Документи</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/oferta" class="hover:text-amber-400 transition-colors">Оферта</a></li>
+                    <li><a href="/policy" class="hover:text-amber-400 transition-colors">Політика обробки даних</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div>
-            <h3 class="font-semibold text-white mb-3">Документи</h3>
-            <ul class="space-y-1 text-sm">
-                <li><a href="/oferta" class="hover:text-white transition-colors">Оферта</a></li>
-                <li><a href="/policy" class="hover:text-white transition-colors">Політика обробки даних</a></li>
-            </ul>
-        </div>
-
-        <div class="sm:text-right">
-            <p class="text-sm text-gray-400">&copy; {{ date('Y') }} StuDoc</p>
+        <div class="border-t border-gray-800 pt-6 text-center text-sm text-gray-600">
+            &copy; {{ date('Y') }} StuDoc — усі права захищено
         </div>
 
     </div>

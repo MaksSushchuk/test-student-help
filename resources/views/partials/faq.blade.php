@@ -1,88 +1,54 @@
-<section class="py-16 px-4 bg-white">
+<section class="py-20 px-4 bg-white">
     <div class="max-w-2xl mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-10">Часті запитання</h2>
 
-        <div class="space-y-3">
+        <div
+            x-data="{ show: false }"
+            x-intersect.once="show = true"
+            :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
+            class="transition-all duration-700 text-center mb-12"
+        >
+            <span class="inline-block bg-amber-50 text-amber-600 text-sm font-semibold px-3 py-1 rounded-full mb-4">FAQ</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Часті запитання</h2>
+        </div>
 
-            <div x-data="{ open: false }" class="border border-gray-200 rounded-lg overflow-hidden">
+        <div
+            x-data="{ show: false }"
+            x-intersect.once="show = true"
+            :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
+            class="transition-all duration-700 delay-150 space-y-3"
+        >
+
+            @php
+            $faqs = [
+                'Чи це не плагіат?',
+                'Як швидко ви виконуєте роботу?',
+                'Що якщо оформлення не сподобається?',
+                'Для яких вишів ви працюєте?',
+                'Чи дотримуєтесь ви вимог ДСТУ 8302:2015?',
+            ];
+            @endphp
+
+            @foreach ($faqs as $question)
+            <div x-data="{ open: false }" class="border border-gray-200 rounded-xl overflow-hidden">
                 <button
                     @click="open = !open"
-                    class="w-full flex justify-between items-center px-5 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 transition-colors"
                     :aria-expanded="open"
+                    class="w-full flex justify-between items-center px-5 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 transition-colors gap-3"
                 >
-                    <span>Чи це не плагіат?</span>
-                    <svg :class="open ? 'rotate-180' : ''" class="w-5 h-5 text-gray-400 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
+                    <span>{{ $question }}</span>
+                    <span
+                        :class="open ? 'bg-amber-400 text-white rotate-45' : 'bg-gray-100 text-gray-500'"
+                        class="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 text-lg leading-none font-bold"
+                        aria-hidden="true"
+                    >+</span>
                 </button>
-                <div x-show="open" x-collapse class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
-                    Тут буде відповідь на запитання. Власник додасть текст пізніше.
+                <div x-show="open" x-collapse class="px-5 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100">
+                    <div class="pt-3">
+                        Тут буде відповідь на запитання. Власник додасть текст пізніше.
+                    </div>
                 </div>
             </div>
-
-            <div x-data="{ open: false }" class="border border-gray-200 rounded-lg overflow-hidden">
-                <button
-                    @click="open = !open"
-                    class="w-full flex justify-between items-center px-5 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 transition-colors"
-                    :aria-expanded="open"
-                >
-                    <span>Як швидко ви виконуєте роботу?</span>
-                    <svg :class="open ? 'rotate-180' : ''" class="w-5 h-5 text-gray-400 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                </button>
-                <div x-show="open" x-collapse class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
-                    Тут буде відповідь на запитання. Власник додасть текст пізніше.
-                </div>
-            </div>
-
-            <div x-data="{ open: false }" class="border border-gray-200 rounded-lg overflow-hidden">
-                <button
-                    @click="open = !open"
-                    class="w-full flex justify-between items-center px-5 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 transition-colors"
-                    :aria-expanded="open"
-                >
-                    <span>Що якщо оформлення не сподобається?</span>
-                    <svg :class="open ? 'rotate-180' : ''" class="w-5 h-5 text-gray-400 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                </button>
-                <div x-show="open" x-collapse class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
-                    Тут буде відповідь на запитання. Власник додасть текст пізніше.
-                </div>
-            </div>
-
-            <div x-data="{ open: false }" class="border border-gray-200 rounded-lg overflow-hidden">
-                <button
-                    @click="open = !open"
-                    class="w-full flex justify-between items-center px-5 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 transition-colors"
-                    :aria-expanded="open"
-                >
-                    <span>Для яких вишів ви працюєте?</span>
-                    <svg :class="open ? 'rotate-180' : ''" class="w-5 h-5 text-gray-400 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                </button>
-                <div x-show="open" x-collapse class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
-                    Тут буде відповідь на запитання. Власник додасть текст пізніше.
-                </div>
-            </div>
-
-            <div x-data="{ open: false }" class="border border-gray-200 rounded-lg overflow-hidden">
-                <button
-                    @click="open = !open"
-                    class="w-full flex justify-between items-center px-5 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 transition-colors"
-                    :aria-expanded="open"
-                >
-                    <span>Чи дотримуєтесь ви вимог ДСТУ 8302:2015?</span>
-                    <svg :class="open ? 'rotate-180' : ''" class="w-5 h-5 text-gray-400 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                </button>
-                <div x-show="open" x-collapse class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
-                    Тут буде відповідь на запитання. Власник додасть текст пізніше.
-                </div>
-            </div>
+            @endforeach
 
         </div>
     </div>
