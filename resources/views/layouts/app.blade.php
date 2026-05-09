@@ -13,7 +13,8 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:locale" content="uk_UA">
 
-    <link rel="icon" href="{{ asset('favicon.ico') }}">
+    <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
+    <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
     <link rel="stylesheet" href="https://fonts.bunny.net/css?family=inter:400,500,600,700">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])

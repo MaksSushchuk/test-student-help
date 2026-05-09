@@ -16,8 +16,8 @@
             <div>
                 <h3 class="font-semibold text-white mb-4">Документи</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="/oferta" class="hover:text-amber-400 transition-colors">Оферта</a></li>
-                    <li><a href="/policy" class="hover:text-amber-400 transition-colors">Політика обробки даних</a></li>
+                    <li><a href="{{ route('offer') }}" class="hover:text-amber-400 transition-colors">Оферта</a></li>
+                    <li><a href="{{ route('policy') }}" class="hover:text-amber-400 transition-colors">Політика обробки даних</a></li>
                 </ul>
             </div>
         </div>
