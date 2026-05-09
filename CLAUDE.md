@@ -241,7 +241,7 @@ public function notifyNewOrder(Order $order): void
   Імʼя: {name}
   Контакт: {contact_value} ({contact_type})
   Тип: {work_type_label}
-  Виш: {university}
+  ВИШ: {university}
   Дедлайн: {deadline}
   Коментар: {comment}
   Файл: {file_url або '—'}

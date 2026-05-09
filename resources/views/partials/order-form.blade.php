@@ -104,7 +104,7 @@
                 {{-- Виш --}}
                 <div class="mb-5">
                     <label for="university" class="block text-sm font-medium text-gray-700 mb-1.5">
-                        Виш <span class="text-gray-400 text-xs font-normal">(необов'язково)</span>
+                        ВИШ <span class="text-gray-400 text-xs font-normal">(необов'язково)</span>
                     </label>
                     <input
                         type="text"

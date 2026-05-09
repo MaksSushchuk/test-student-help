@@ -33,7 +33,7 @@ class TelegramNotifier
             . '<b>Імʼя:</b> ' . e($order->name) . "\n"
             . '<b>Контакт:</b> ' . e($order->contact_value) . " ({$contactLabel})\n"
             . "<b>Тип:</b> {$workLabel}\n"
-            . '<b>Виш:</b> ' . e($order->university ?? '—') . "\n"
+            . '<b>ВИШ:</b> ' . e($order->university ?? '—') . "\n"
             . "<b>Дедлайн:</b> {$deadline}\n"
             . '<b>Коментар:</b> ' . e($order->comment ?? '—') . "\n"
             . "<b>Файл:</b> {$fileUrl}";
