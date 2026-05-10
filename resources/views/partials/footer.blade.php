@@ -4,13 +4,14 @@
         <div class="grid sm:grid-cols-3 gap-8 mb-8">
             <div>
                 <span class="text-white font-bold text-xl">Stu<span class="text-amber-400">Doc</span></span>
-                <p class="text-sm mt-3 leading-relaxed">Оформлення студентських робіт за ДСТУ 8302:2015 і вимогами кафедр.</p>
+                <p class="text-sm mt-3 leading-relaxed">Оформлення дипломних і курсових за ДСТУ</p>
+                <p class="text-sm mt-2 text-gray-500">Робочий час: 10:00–20:00 (Київ)</p>
             </div>
 
             <div>
                 <h3 class="font-semibold text-white mb-4">Контакти</h3>
-                <p class="text-sm">Telegram: @studoc_help</p>
-                <p class="text-sm mt-1">Час роботи: 10:00–20:00 (Київ)</p>
+                <p class="text-sm">Telegram: {{TELEGRAM_USERNAME}}</p>
+                <p class="text-sm mt-1">Email: {{EMAIL}}</p>
             </div>
 
             <div>
@@ -23,7 +24,7 @@
         </div>
 
         <div class="border-t border-gray-800 pt-6 text-center text-sm text-gray-600">
-            &copy; {{ date('Y') }} StuDoc — усі права захищено
+            &copy; 2026 StuDoc. Усі права захищено.
         </div>
 
     </div>

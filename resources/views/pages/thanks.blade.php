@@ -13,11 +13,19 @@
             </svg>
         </div>
 
-        <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Дякуємо!</h1>
+        <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Дякуємо! Заявка прийнята.</h1>
 
-        <p class="text-gray-600 leading-relaxed mb-8">
-            Зв'яжемось з вами протягом 1–2 годин у робочий час<br>
-            <span class="font-semibold text-gray-800">(10:00–20:00 Київ)</span>
+        <p class="text-gray-600 leading-relaxed mb-4">
+            Зв'яжемось з тобою в Telegram протягом 1–2 годин у робочий час<br>
+            <span class="font-semibold text-gray-800">(10:00–20:00, Київ)</span>.
+        </p>
+
+        <p class="text-gray-600 leading-relaxed mb-4">
+            Якщо заявка залишена пізно ввечері або у вихідні — відповімо першим ділом у наступний робочий день.
+        </p>
+
+        <p class="text-sm text-gray-400 leading-relaxed mb-8">
+            Перевір, що в Telegram у тебе не вимкнені повідомлення від нових контактів.
         </p>
 
         <a

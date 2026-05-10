@@ -31,13 +31,13 @@
         </div>
 
         <h1 class="anim-in-1 text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 tracking-tight">
-            Оформимо вашу<br>
-            <span class="text-amber-400">дипломну чи курсову</span><br>
-            роботу за ДСТУ
+            Оформлення<br>
+            <span class="text-amber-400">дипломних і курсових</span><br>
+            за ДСТУ
         </h1>
 
         <p class="anim-in-2 text-lg sm:text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Правильне оформлення за ДСТУ 8302:2015 і вимогами вашої кафедри. Без зайвих нервів — ви здаєте роботу вчасно.
+            Принесеш текст — повернемо роботу, оформлену під вимоги твого вишу. 24–48 годин. Від 200 грн.
         </p>
 
         <div class="anim-in-3 flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -46,13 +46,14 @@
                 data-scroll-to
                 class="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-blue-950 font-bold text-lg px-8 py-4 rounded-xl transition-all duration-200 hover:scale-105 shadow-lg"
             >
-                Замовити зараз
+                Замовити оформлення
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
             <a href="#how-it-works" class="text-blue-200 hover:text-white text-sm underline underline-offset-4 transition-colors">
                 Як це працює?
             </a>
         </div>
+        <p class="text-sm text-blue-300/70 mt-4">Передоплата 50%. Безкоштовні правки до здачі.</p>
     </div>
 
     {{-- Стрип зі статистикою --}}
