@@ -10,8 +10,8 @@
 
             <div>
                 <h3 class="font-semibold text-white mb-4">Контакти</h3>
-                <p class="text-sm">Telegram: {{TELEGRAM_USERNAME}}</p>
-                <p class="text-sm mt-1">Email: {{EMAIL}}</p>
+                <p class="text-sm">Telegram: @studoc_help</p>
+                <p class="text-sm mt-1">Email: studoc_help@gmail.com</p>
             </div>
 
             <div>

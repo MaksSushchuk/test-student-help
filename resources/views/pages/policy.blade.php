@@ -98,7 +98,7 @@
                         <li>Вимагати видалення ваших даних з нашої бази</li>
                         <li>Відкликати згоду на обробку в будь-який момент</li>
                     </ul>
-                    <p>Для реалізації цих прав напишіть нам через Telegram {{TELEGRAM_USERNAME}} або на email {{EMAIL}}.</p>
+                    <p>Для реалізації цих прав напишіть нам через Telegram @studoc_help або на email studoc_help@gmail.com.</p>
                 </div>
 
                 <div>
@@ -119,8 +119,8 @@
                 <div>
                     <h2 class="text-lg font-semibold text-gray-900 mb-3">11. Контакти</h2>
                     <p class="mb-1">З питань обробки персональних даних:</p>
-                    <p class="mb-1">Telegram: {{TELEGRAM_USERNAME}}</p>
-                    <p>Email: {{EMAIL}}</p>
+                    <p class="mb-1">Telegram: @studoc_help</p>
+                    <p>Email: studoc_help@gmail.com</p>
                 </div>
 
             </div>
